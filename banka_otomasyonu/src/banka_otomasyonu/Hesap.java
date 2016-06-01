@@ -3,10 +3,6 @@ package banka_otomasyonu;
 public class Hesap extends Banka{
     
     private final static String [] hesap_turleri={"VADELİ","VADESİZ"}; 
-    
-    /*Hesap(String banka){
-        this.setBanka_adi(banka);
-    }*/
     private int hesap_no;
     private String hesap_sifre;
     private String hesap_turu;
@@ -61,6 +57,9 @@ public class Hesap extends Banka{
     public void para_cek(int cekilen){
         if (cekilen<=bakiye){
             bakiye-=cekilen;
+        }
+        else{
+            System.out.println("YETERSİZ BAKİYE");
         }
         
     }
