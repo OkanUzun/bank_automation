@@ -16,10 +16,8 @@ public class main_class {
         System.out.println("GİRİŞ İÇİN --> 2");
         System.out.println("ÇIKIŞ İÇİN --> 3\n");
         System.out.print("SEÇİM : ");
-        
-        
-        int kontrol = scanner.nextInt();
-        switch (kontrol) {
+                
+        switch (scanner.nextInt()) {
             case 1:
                 Musteri.kayit_ol();
                 break;
